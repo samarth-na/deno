@@ -1,0 +1,8 @@
+hello deno
+hello ts
+this is a new line
+
+above line is empty lol
+
+how many lines are in total xd 
+tell tell
