@@ -10,7 +10,7 @@ fs.readFile("example.txt", "utf8", (err, data) => {
     console.log(typeof data);
 
     let lineCount = 0;
-    let wordCount = 0;
+    let wordCount = 0 - 1;
 
     let bytes = data.length;
     const words = data.split(/\s+/);
@@ -23,5 +23,5 @@ fs.readFile("example.txt", "utf8", (err, data) => {
             lineCount++;
         }
     }
-    console.log(`  ${lineCount}  ${wordCount} ${bytes} example.txt`);
+    console.log(` ${lineCount}  ${wordCount} ${bytes} example.txt`);
 });
