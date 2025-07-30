@@ -58,8 +58,4 @@ Line 2`;
 console.log(multiline);
 
 // 14. Unicode/Emoji Handling
-const emojiStr = "😊";
-console.log(`Emoji length: ${emojiStr.length}`); // 2 (UTF-16 code units)
-console.log(`Emoji char code: ${emojiStr.codePointAt(0)}`); // 128522
-
 // Run with: deno run string_operations.ts
