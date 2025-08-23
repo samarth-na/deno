@@ -1,3 +1,4 @@
+// highest common divisor
 export default function hcd(n1: number, n2: number) {
     let index: number;
     if (n1 < n2) {
