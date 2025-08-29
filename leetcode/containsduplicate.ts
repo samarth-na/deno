@@ -3,7 +3,7 @@
  * @return {boolean}
  * [1,2,3,3] : false
  */
-function hasDuplicate(nums) {
+function hasDuplicate(nums: number[]): boolean {
     let checknum = new Set();
     for (let index = 0; index < nums.length; index++) {
         if (checknum.has(nums[index])) {
@@ -13,12 +13,12 @@ function hasDuplicate(nums) {
     }
     return false;
 }
-function containsDuplicate(nums) {
+function containsDuplicate(nums: number[]): boolean {
     let checknum = new Set(nums);
     if (nums.length != checknum.size) {
         return true;
     }
     return false;
 }
-let ans = hasDuplicate([1, 3, 2, 1]);
+let value = hasDuplicate([1, 3, 2, 1]);
 console.log(ans);
