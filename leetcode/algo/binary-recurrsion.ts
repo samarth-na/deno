@@ -9,7 +9,7 @@ export function binRecursion(arr: num[], target: num, left: num, right: num) {
     const mid = Math.floor(left + (right - left) / 2);
 
     if (arr[mid] === target) {
-        console.log("its here");
+        console.log("its here", mid);
         return mid;
     } else if (target < arr[mid]) {
         return binRecursion(arr, target, left, arr[mid] - 1);
