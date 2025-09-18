@@ -21,4 +21,4 @@ function containsDuplicate(nums: number[]): boolean {
     return false;
 }
 let value = hasDuplicate([1, 3, 2, 1]);
-console.log(ans);
+console.log(value);
