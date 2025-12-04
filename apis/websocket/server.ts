@@ -1,4 +1,4 @@
-import { WebSocketServer } from "npm:ws"; // WebSocket server
+import { WebSocketServer } from "ws"; // WebSocket server
 
 const wss = new WebSocketServer({ port: 8080 }); // start server on port 8080
 
@@ -6,7 +6,7 @@ wss.on("connection", (ws) => {
     // when client connects
     console.log("Client connected"); // log connection
 
-    ws.on("message", (msg) => {
+    ws.on("message", (msg: any) => {
         // when server gets message
         console.log("Received:", msg.toString()); // print message
         ws.send("Server got: " + msg); // send back reply
