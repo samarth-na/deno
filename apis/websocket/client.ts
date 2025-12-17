@@ -8,7 +8,7 @@ ws.on("open", () => {
     ws.send("Hello server"); // send message
 });
 
-ws.on("message", (msg) => {
+ws.on("message", (msg: string) => {
     // receive messages
     console.log("Received:", msg.toString()); // print server reply
 });
